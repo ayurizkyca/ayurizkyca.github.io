@@ -1,0 +1,65 @@
+*{
+    background-color : #1E1E1E;
+}
+
+body{
+    padding : 0;
+}
+
+header{
+    position : fixed;
+    height : 80px;
+    width : 100%;
+    background-color : #1E1E1E;
+    box-shadow : 0px 5px 5px #009418;
+}
+
+.navbar {
+    align-items: center;
+    display : flex;
+    justify-content: space-between;
+    padding : 10px;
+}
+
+.navbar ul{
+    display : inline;
+}
+
+.navbar li{
+    display : inline;
+}
+
+a{
+    font-family : Poppins;
+    color : #D9D9D9;
+    text-decoration : none;
+    padding : 25px;
+    font-size : 20;
+}
+
+a:hover{
+    color : #009418;
+}
+
+main{
+    padding-top : 5em;
+    color : white;
+}
+
+button{
+    color : white;
+    padding : 10px 21px;
+    border-radius : 3%;
+}
+
+button[class="primary"]{
+    background-color : #009418;
+}
+
+.land-sec-1{
+    background-image : url("assets/img/about-me.png");
+}
+
+.land-sec-2{
+    /* background-color: #141815; */
+}
