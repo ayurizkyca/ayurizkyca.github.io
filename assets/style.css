@@ -1,5 +1,5 @@
 *{
-    background-color : #1E1E1E;
+    margin: 0%;
 }
 
 body{
@@ -29,7 +29,7 @@ header{
     display : inline;
 }
 
-a{
+.navbar a{
     font-family : Poppins;
     color : #D9D9D9;
     text-decoration : none;
@@ -37,12 +37,12 @@ a{
     font-size : 20;
 }
 
-a:hover{
+.navbar a:hover{
     color : #009418;
 }
 
 main{
-    padding-top : 5em;
+    padding-top : 3.5em;
     color : white;
 }
 
@@ -56,10 +56,53 @@ button[class="primary"]{
     background-color : #009418;
 }
 
-.land-sec-1{
-    background-image : url("assets/img/about-me.png");
+button[class="secondary"]{
+    background-color: #141815;
+    border-color: #009418;
+    box-sizing: 2px;
 }
 
-.land-sec-2{
-    /* background-color: #141815; */
+.land-sec1{
+    background-color : #1E1E1E;
+    display : flex;
+    justify-content: space-between;
+    padding : 0px 130px;
+} 
+
+.land-sec2{
+    background-color: #141815;
+    padding: 50px;
+    display : flex;
+}
+
+.land-sec3{
+    background-color: #1E1E1E;
+    padding: 50px;
+}
+
+.sec-desc{
+    // flex-direction: column;
+    // align-items: center;
+    // align-content: center;
+    justify-content: center;
+}
+
+footer{
+    color: black;
+    background-color: #009418;
+    padding: 60px 50px;
+}
+
+footer a{
+    color: black;
+    text-decoration: none;
+}
+
+footer li{
+    display: inline;
+    padding: 20px;
+}
+
+footer a:hover{
+    color: yellowgreen;
 }
