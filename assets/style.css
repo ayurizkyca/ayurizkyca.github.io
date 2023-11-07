@@ -64,6 +64,9 @@ button[class="secondary"]{
 
 .land-sec1{
     background-color : #1E1E1E;
+    background-image: url("/assets/img/ayu-rizkyca.png");
+    background-position: right;
+    background-repeat: no-repeat;
     display : flex;
     justify-content: space-between;
     padding : 0px 130px;
@@ -71,12 +74,18 @@ button[class="secondary"]{
 
 .land-sec2{
     background-color: #141815;
+    background-image: url("/assets/img/about-me.png");
+    background-position: 100% 10% ;
+    background-repeat: no-repeat;
     padding: 50px;
     display : flex;
 }
 
 .land-sec3{
     background-color: #1E1E1E;
+    background-image: url("/assets/img/my-works.png");
+    background-position: top-right;
+    background-repeat: no-repeat;
     padding: 50px;
 }
 
@@ -105,4 +114,11 @@ footer li{
 
 footer a:hover{
     color: yellowgreen;
+}
+
+.cardInteres{
+    padding: 48px 40px;
+    background-color: #141815;
+    margin: 200px 25px;
+    display: flex;
 }
