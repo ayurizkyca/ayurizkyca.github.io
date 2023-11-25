@@ -1,5 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Poppins:wght@100;200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Inter:wght@100;300;500;800&family=Poppins:wght@100;200;700&display=swap');
+
 *{
     margin: 0%;
+    font-family: 'Poppins', sans-serif;
 }
 
 body{
@@ -21,20 +25,21 @@ header{
     padding : 10px;
 }
 
-.navbar ul{
-    display : inline;
-}
-
 .navbar li{
     display : inline;
+    font-family: poppins;
+}
+
+.navbar ul{
+    display: inline;
 }
 
 .navbar a{
-    font-family : Poppins;
+    font-size: 20px;
+    font-weight: 400;
     color : #D9D9D9;
     text-decoration : none;
-    padding : 25px;
-    font-size : 20;
+    padding : 20px;
 }
 
 .navbar a:hover{
@@ -42,14 +47,68 @@ header{
 }
 
 main{
+    background-color: #141815;
     padding-top : 3.5em;
     color : white;
+}
+
+main[class='works-page']{
+    background-color: #141815;
+    padding: 7em 0em 2em 0em;
+    color : white;
+    background-image: url("/assets/img/things-done.png");
+    background-position: 80% 8%;
+    background-repeat: no-repeat;
+}
+
+main[class='contact-page']{
+    background-color: #141815;
+    padding: 12em 0em 2em 0em;
+    color : white;
+    background-image: url("/assets/img/contact-me.png");
+    background-position: 50% 20%;
+    background-repeat: no-repeat;
+}
+
+main[class='contact-page'] h1{
+    text-align: center;
+}
+
+main[class='contact-page'] h3{
+    font-size: 40px;
+    font-family: poppins;
+    font-weight: 300;
+    color: #009418;
+    padding-left: 50px;
+}
+
+p{
+    font-family: inter, poppins;
+    font-size: 20px;
+    font-weight: 100;
+}
+
+h2{
+    font-size: 45px;
+    font-weight: bold;
+    font-family: inter, poppins;
+}
+
+.land-sec1 h3{
+    margin: 20px 0px 0px 0px;
+    font-family: poppins;
+    font-size: 22px;
+    font-weight: 500;
 }
 
 button{
     color : white;
     padding : 10px 21px;
-    border-radius : 3%;
+    border-radius : 5px;
+    font-weight: 700;
+    font-family: inter, poppins;
+    font-size: 22px;
+    border: none;
 }
 
 button[class="primary"]{
@@ -57,9 +116,9 @@ button[class="primary"]{
 }
 
 button[class="secondary"]{
-    background-color: #141815;
-    border-color: #009418;
-    box-sizing: 2px;
+    background-color: rgb(0, 148, 24, 0);
+    border: 0.15rem solid #009418;
+    
 }
 
 .land-sec1{
@@ -75,7 +134,7 @@ button[class="secondary"]{
 .land-sec2{
     background-color: #141815;
     background-image: url("/assets/img/about-me.png");
-    background-position: 100% 10% ;
+    background-position: 52% 25% ;
     background-repeat: no-repeat;
     padding: 50px;
     display : flex;
@@ -84,16 +143,45 @@ button[class="secondary"]{
 .land-sec3{
     background-color: #1E1E1E;
     background-image: url("/assets/img/my-works.png");
-    background-position: top-right;
+    background-position: 90% 5%;
     background-repeat: no-repeat;
-    padding: 50px;
+    padding: 90px;
 }
 
-.sec-desc{
-    // flex-direction: column;
-    // align-items: center;
-    // align-content: center;
+.land-sec3 h1{
+    text-align: end;
+}
+
+.content{
+    flex-direction: column;
+    display : flex;
     justify-content: center;
+    padding: 5% 10%;
+}
+
+.sec-projects{
+    padding: 3em 0em;
+}
+.sec-desc{
+    flex-direction: column;
+    display : flex;
+    justify-content: center;
+}
+
+.sec-desc2{
+    flex-direction: column;
+    display : flex;
+    justify-content: space-evenly;
+    padding: 55px;
+}
+
+.c-sosmed button{
+    margin: 0px 80px 0px 0px;
+}
+
+.c-sosmed{
+    display: flex;
+    margin: 50px 0px;
 }
 
 footer{
@@ -105,11 +193,19 @@ footer{
 footer a{
     color: black;
     text-decoration: none;
+    font-family: inter, poppins;
+    font-weight: 500;
 }
 
-footer li{
+footer p{
+    font-family: inter, poppins;
+    font-size: 20;
+    font-weight: 300;
+}
+
+footer ul, footer li{
+    padding: 0% 2% 0% 0%;
     display: inline;
-    padding: 20px;
 }
 
 footer a:hover{
@@ -118,7 +214,128 @@ footer a:hover{
 
 .cardInteres{
     padding: 48px 40px;
-    background-color: #141815;
-    margin: 200px 25px;
+    background-color: rgb(0, 148, 24, 0.1);
+    margin: 5% 5%;
     display: flex;
+    justify-content: space-between;
+    align-content: center;
+}
+
+.cardInteres h3{
+    font-weight: 800;
+    font-size: 28px;
+}
+
+.title-interes{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+main h1{
+    color:#009418;
+    font-family: inter, poppins;
+    font-weight: 900;
+    font-size: 40px;
+}
+
+footer h1{
+    font-family: poppins;
+    font-size: 42px;
+    font-weight: 700;
+    margin: 25px 0px;
+}
+
+.sec-about{
+    background-image: url("/assets/img/about-me.png");
+    background-position: 70% 25% ;
+    background-repeat: no-repeat;
+    padding: 50px;
+    display : flex;
+}
+
+.sec-works{
+    padding: 0em 7em;
+    text-align: end;
+}
+
+.desc-about{
+    padding: 10%;
+    flex-direction: column;
+    display : flex;
+    justify-content: space-evenly;
+
+}
+
+.desc-about h1{
+    text-align: center;
+}
+
+.desc-about p{
+    text-align: center;
+}
+
+.cards{
+    margin: 40px 0px;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    
+}
+
+.card li{
+    display: block;
+    text-align: center;
+}
+
+.sosmeds{
+    margin: 30px 0px 0px 0px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.sosmed a{
+    margin: 25px;
+}
+
+.project{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    // border: solid rgb(0, 148, 24, 0.5);
+    margin: 2% 4%;
+}
+
+.img-project{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.img-project img{
+    width: 70%;
+}
+
+.desc-project{
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    margin: 5% 5%;
+}
+
+.contacts{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 6%;
+}
+
+.contact{
+    text-align: center;
+    padding: 30px;
+}
+
+.contact p{
+    padding-top: 10px;
 }
