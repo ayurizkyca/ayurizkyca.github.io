@@ -7,7 +7,9 @@
 }
 
 body{
-    padding : 0;
+    padding : 0%;
+    margin: 0%;
+    overflow-x: hidden;
 }
 
 header{
@@ -19,10 +21,10 @@ header{
 }
 
 .navbar {
-    align-items: center;
+    align-items: center; 
     display : flex;
-    justify-content: space-between;
-    padding : 10px;
+    justify-content: space-around;
+    // padding : 10px;
 }
 
 .navbar li{
@@ -31,24 +33,24 @@ header{
 }
 
 .navbar ul{
-    display: inline;
+    display: flex;
 }
 
 .navbar a{
-    font-size: 20px;
+    font-size: 1.25rem;
     font-weight: 400;
     color : #D9D9D9;
     text-decoration : none;
     padding : 20px;
 }
 
-.navbar a:hover{
+.navbar a.active, a:hover{
     color : #009418;
 }
 
 main{
     background-color: #141815;
-    padding-top : 3.5em;
+    // padding-top : 3.5em;
     color : white;
 }
 
@@ -84,12 +86,12 @@ main[class='contact-page'] h3{
 
 p{
     font-family: inter, poppins;
-    font-size: 20px;
+    font-size: clamp(1rem,2vw,1.25rem);
     font-weight: 100;
 }
 
 h2{
-    font-size: 45px;
+    font-size: clamp(1.5rem,20vw,2.8rem);
     font-weight: bold;
     font-family: inter, poppins;
 }
@@ -97,7 +99,7 @@ h2{
 .land-sec1 h3{
     margin: 20px 0px 0px 0px;
     font-family: poppins;
-    font-size: 22px;
+    font-size: 1.3rem;
     font-weight: 500;
 }
 
@@ -107,7 +109,7 @@ button{
     border-radius : 5px;
     font-weight: 700;
     font-family: inter, poppins;
-    font-size: 22px;
+    font-size: clamp(1rem, 5vw, 1.3rem);
     border: none;
 }
 
@@ -128,7 +130,7 @@ button[class="secondary"]{
     background-repeat: no-repeat;
     display : flex;
     justify-content: space-between;
-    padding : 0px 130px;
+    padding : 0rem 10vh;
 } 
 
 .land-sec2{
@@ -145,7 +147,7 @@ button[class="secondary"]{
     background-image: url("/assets/img/my-works.png");
     background-position: 90% 5%;
     background-repeat: no-repeat;
-    padding: 90px;
+    padding: 5vw;
 }
 
 .land-sec3 h1{
@@ -172,7 +174,7 @@ button[class="secondary"]{
     flex-direction: column;
     display : flex;
     justify-content: space-evenly;
-    padding: 55px;
+    padding: 2vw;
 }
 
 .c-sosmed button{
@@ -187,7 +189,7 @@ button[class="secondary"]{
 footer{
     color: black;
     background-color: #009418;
-    padding: 60px 50px;
+    padding: 2vh 4vw;
 }
 
 footer a{
@@ -212,10 +214,14 @@ footer a:hover{
     color: yellowgreen;
 }
 
+.works-page .cardInteres{
+    margin: 5vh 5vw;
+}
+
 .cardInteres{
-    padding: 48px 40px;
+    padding: 5vh 5vw;
     background-color: rgb(0, 148, 24, 0.1);
-    margin: 5% 5%;
+    // margin: 5vh 5vw;
     display: flex;
     justify-content: space-between;
     align-content: center;
@@ -223,7 +229,7 @@ footer a:hover{
 
 .cardInteres h3{
     font-weight: 800;
-    font-size: 28px;
+    font-size: clamp(1rem, 5vw, 1.75rem);
 }
 
 .title-interes{
@@ -236,12 +242,12 @@ main h1{
     color:#009418;
     font-family: inter, poppins;
     font-weight: 900;
-    font-size: 40px;
+    font-size: clamp(1.4rem, 8vw, 3rem);
 }
 
 footer h1{
     font-family: poppins;
-    font-size: 42px;
+    font-size: clamp(1.4rem, 6vw, 3rem);
     font-weight: 700;
     margin: 25px 0px;
 }
@@ -250,7 +256,7 @@ footer h1{
     background-image: url("/assets/img/about-me.png");
     background-position: 70% 25% ;
     background-repeat: no-repeat;
-    padding: 50px;
+    padding: 5vw;
     display : flex;
 }
 
@@ -267,11 +273,7 @@ footer h1{
 
 }
 
-.desc-about h1{
-    text-align: center;
-}
-
-.desc-about p{
+.desc-about h1, .desc-about p{
     text-align: center;
 }
 
@@ -295,7 +297,11 @@ footer h1{
 }
 
 .sosmed a{
-    margin: 25px;
+    margin: 2vw 2vw 2vw 0vw;
+}
+
+.land-sec1 .sosmed a{
+    margin: 2vw 2vw 2vw 2vw;
 }
 
 .project{
@@ -307,7 +313,7 @@ footer h1{
 }
 
 .img-project{
-    width: 50%;
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -338,4 +344,179 @@ footer h1{
 
 .contact p{
     padding-top: 10px;
+}
+
+img{
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.img-center{
+    // width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.menu-toggle{
+    justify-content: space-between;
+    height: 20px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    display: none;
+}
+
+.menu-toggle input{
+    position: absolute;
+    width: 40px;
+    height: 28px;
+    opacity: 0;
+    left: -5px;
+    top: -4px;
+    cursor: pointer;
+    z-index: 2;
+}
+
+.menu-toggle span{
+    width: 28px;
+    height: 5px;
+    background-color: #D9D9D9;
+    border-radius: 3px;
+    transition: all 0.5s;
+}
+
+//Hamburger menu Animation
+.menu-toggle span:nth-child(2){
+    transform-origin: 0 0;
+}
+
+.menu-toggle span:nth-child(4){
+    transform-origin: 0 100%;
+}
+
+.menu-toggle input:checked ~ span:nth-child(2){
+    transform: rotate(45deg) translate(2px, 5px);
+}
+
+.menu-toggle input:checked ~ span:nth-child(4){
+    transform: rotate(-45deg) translate(2px, 2px);
+}
+
+.menu-toggle input:checked ~ span:nth-child(3){
+    transform: scale(0);
+}
+
+.navbar ul.slide{
+    transform: translateX(0);
+}
+
+/*Tampilan Mobile*/
+@media only screen and (max-width : 768px){
+
+    .menu-toggle{
+        display: flex;
+    }
+
+    .contacts, .project, .cardInteres{
+        flex-direction: column;
+    }
+
+    .land-sec1{
+        flex-direction: column;
+        padding-bottom: 5vh;
+        background-image: none;
+        text-align: center;
+    }
+
+    .land-sec2{
+        flex-direction: column;
+        background-image: none;
+        text-align: center;
+    }
+
+    .works-page p{
+        text-align: start;
+    }
+
+    .sec-works{
+        padding: 0em 0em;
+        text-align: center;
+    }
+
+    .order2{
+        order: 2;
+    }
+
+    .order1{
+        order: 1;
+    }
+
+    .sec-about{
+        flex-direction: column;
+        background-image: none;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .img-center{
+        margin-top: 20vh;
+    }
+
+    .sosmeds{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .sosmed{
+        padding-top: 5vh;
+    }
+
+    .sec-desc .sosmeds{
+        display: none;
+    }
+
+    .btnInteres{
+        padding-top: 2vh;
+        align-content: space-between;
+    }
+    
+    .cardInteres{
+        justify-content: space-around;
+    }
+
+    .navbar ul{
+        position: absolute;
+        right: 0;
+        top: 0;
+        flex-direction: column;
+        background-color: #1E1E1E;
+        height: 50vh;
+        justify-content: space-evenly;
+        // z-index: -1;
+        transform: translateX(100%);
+        transition: all 1s;
+    }
+}
+
+@media only screen and (max-width : 1080px) and (  min-width : 769px){
+    .sosmeds{
+        flex-direction: column;
+        align-items: start;
+    }
+
+    .sec-about .sosmeds{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .sosmed{
+        padding-top: 5vh;
+    }
+
+    .cardInteres{
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+
 }
